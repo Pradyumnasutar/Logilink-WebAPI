@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeS_LogiLink_WebAPI", "LeS_LogiLink_WebAPI.csproj", "{146BAF02-0F39-47B9-BCB4-F7D14CD18386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic_Management_Lib", "..\Logistic_Management_Lib\Logistic_Management_Lib.csproj", "{5BED9023-32EF-4436-9938-57842BE74897}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LES_USER_ADMINISTRATION_LIB", "..\LES_USER_ADMINISTRATION_LIB\LES_USER_ADMINISTRATION_LIB.csproj", "{3E2E9F30-DE01-4091-B9F8-90ADEA6B6BD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCode", "..\QR_CODE_Generator\QrCodeTest\QrCode.csproj", "{FA50FAE2-80A5-4978-A75A-C60322592C59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eSupplier_Lib", "..\eSupplier_Lib\eSupplier_Lib.csproj", "{3657444E-1F68-4148-B838-F60944163F82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146BAF02-0F39-47B9-BCB4-F7D14CD18386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146BAF02-0F39-47B9-BCB4-F7D14CD18386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146BAF02-0F39-47B9-BCB4-F7D14CD18386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146BAF02-0F39-47B9-BCB4-F7D14CD18386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BED9023-32EF-4436-9938-57842BE74897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BED9023-32EF-4436-9938-57842BE74897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BED9023-32EF-4436-9938-57842BE74897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BED9023-32EF-4436-9938-57842BE74897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2E9F30-DE01-4091-B9F8-90ADEA6B6BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2E9F30-DE01-4091-B9F8-90ADEA6B6BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2E9F30-DE01-4091-B9F8-90ADEA6B6BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2E9F30-DE01-4091-B9F8-90ADEA6B6BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA50FAE2-80A5-4978-A75A-C60322592C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA50FAE2-80A5-4978-A75A-C60322592C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA50FAE2-80A5-4978-A75A-C60322592C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA50FAE2-80A5-4978-A75A-C60322592C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3657444E-1F68-4148-B838-F60944163F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3657444E-1F68-4148-B838-F60944163F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3657444E-1F68-4148-B838-F60944163F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3657444E-1F68-4148-B838-F60944163F82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68D6CF4B-C0F6-4445-8041-5C9FCC1D26F4}
+	EndGlobalSection
+EndGlobal

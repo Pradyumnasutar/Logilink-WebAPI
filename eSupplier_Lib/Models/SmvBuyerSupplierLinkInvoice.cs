@@ -1,0 +1,171 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace eSupplier_Lib.Models;
+
+public partial class SmvBuyerSupplierLinkInvoice
+{
+    public int? Buyerid { get; set; }
+
+    public int? Supplierid { get; set; }
+
+    public string? BuyerCode { get; set; }
+
+    public string? BuyerName { get; set; }
+
+    public string? BuyerMtsCode { get; set; }
+
+    public string? BuyerMtmlCode { get; set; }
+
+    public string? BuyerAddress1 { get; set; }
+
+    public string? BuyerAddress2 { get; set; }
+
+    public string? BuyerAddress3 { get; set; }
+
+    public string? BuyerAddress4 { get; set; }
+
+    public string? BuyerAddrZipcode { get; set; }
+
+    public string? BuyerAddrCity { get; set; }
+
+    public string? BuyerAddrCountry { get; set; }
+
+    public string? BuyerContactPerson { get; set; }
+
+    public string? BuyAddrPhone1 { get; set; }
+
+    public string? BuyAddrPhone2 { get; set; }
+
+    public string? BuyerAddrFax { get; set; }
+
+    public string? SupplierCode { get; set; }
+
+    public string? SupplierName { get; set; }
+
+    public string? SupplierMtsCode { get; set; }
+
+    public string? SupplierMtmlCode { get; set; }
+
+    public string? SupplierAddress1 { get; set; }
+
+    public string? SupplierAddress2 { get; set; }
+
+    public string? SupplierAddress3 { get; set; }
+
+    public string? SupplierAddress4 { get; set; }
+
+    public string? SupplierAddrZipcode { get; set; }
+
+    public string? SupplierAddrCity { get; set; }
+
+    public string? SupplierAddrCountry { get; set; }
+
+    public string? SupplierContactPerson { get; set; }
+
+    public string? SupplierAddrPhone1 { get; set; }
+
+    public string? SupplierAddrPhone2 { get; set; }
+
+    public string? SupplierAddrFax { get; set; }
+
+    public string? BuyerFormat { get; set; }
+
+    public string? VendorFormat { get; set; }
+
+    public short? ImportRfq { get; set; }
+
+    public short? ExportRfq { get; set; }
+
+    public short? ExportRfqAck { get; set; }
+
+    public short? ImportQuote { get; set; }
+
+    public short? ExportQuote { get; set; }
+
+    public short? ImportPo { get; set; }
+
+    public short? ExportPoAck { get; set; }
+
+    public short? ExportPoc { get; set; }
+
+    public string? ImportPath { get; set; }
+
+    public string? ExportPath { get; set; }
+
+    public string? BuyerAddrEmail { get; set; }
+
+    public string? SupplierAddrEmail { get; set; }
+
+    public short? NotifyBuyer { get; set; }
+
+    public short? NotifySupplr { get; set; }
+
+    public double? DefaultPrice { get; set; }
+
+    public int Linkid { get; set; }
+
+    public string? BuyerLinkCode { get; set; }
+
+    public string? VendorLinkCode { get; set; }
+
+    public short? IsActive { get; set; }
+
+    public string? ReplyEmail { get; set; }
+
+    public string? GroupCode { get; set; }
+
+    public string? GroupDesc { get; set; }
+
+    public int? GroupId { get; set; }
+
+    public string? BuyerContact { get; set; }
+
+    public string? SupplierContact { get; set; }
+
+    public string? BuyerEmail { get; set; }
+
+    public string? SupplierEmail { get; set; }
+
+    public string? CcEmail { get; set; }
+
+    public string? BccEmail { get; set; }
+
+    public string? MailSubject { get; set; }
+
+    public string? ErrNotifyEmail { get; set; }
+
+    public string? SuppSenderCode { get; set; }
+
+    public string? SuppReceiverCode { get; set; }
+
+    public string? ByrSenderCode { get; set; }
+
+    public string? ByrReceiverCode { get; set; }
+
+    public string? BuyerExportFormat { get; set; }
+
+    public string? BuyerMapping { get; set; }
+
+    public string? SupplierMapping { get; set; }
+
+    public string? SupplierExportFormat { get; set; }
+
+    public string? SupplierImportFormat { get; set; }
+
+    public string? SuppExportPath { get; set; }
+
+    public string? SuppImportPath { get; set; }
+
+    public string? SupWebServiceUrl { get; set; }
+
+    public string? AssemblyName { get; set; }
+
+    public string? AsmbImportClass { get; set; }
+
+    public string? ImportFunction { get; set; }
+
+    public string? AsmbExportClass { get; set; }
+
+    public string? ExportFunction { get; set; }
+}

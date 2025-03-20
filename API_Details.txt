@@ -1,0 +1,1242 @@
+all with authorize token
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/UserAdmin/UserLogIn
+{
+  "username": "DEV",
+  "password": "sa"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetModuleStatus?Moduleid=1
+
+
+/* Shipment Details */
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetCustomerInfoList?companyid=1001
+
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVShipmentTripPlan?Shipmentid=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrderListByShipmentId?ShipmentId=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetShipmentDocumentByShipmentId?ShipmentId=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateShipmentDetails
+{
+  "shipment_Info": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "2024-06-04T09:59:35.641Z",
+    "planned_delivery_date": "2024-06-04T09:59:35.641Z",
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "shipment_statusdesc": "string",
+    "jobno": "string",
+    "companyid": 0,
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-04T09:59:35.641Z",
+    "vessel_ata": "2024-06-04T09:59:35.641Z",
+    "delivery_date": "2024-06-04T09:59:35.641Z",
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "2024-06-04T09:59:35.641Z",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string"
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,
+    "vehicle_no": "string",
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "2024-06-04T09:59:35.641Z",
+    "actual_delivery_end": "2024-06-04T09:59:35.641Z",
+    "planned_from": "2024-06-04T09:59:35.641Z",
+    "planned_to": "2024-06-04T09:59:35.641Z",
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",
+    "allowance_amt": 0
+  },
+  "shipment_document": [
+    {
+      "shipmentDocumentId": 0,
+      "documentNo": 0,
+      "documentType": "string",
+      "documentName": "string",
+      "documentTitle": "string",
+      "documentPath": "string",
+      "createdDate": "2024-06-04T09:59:35.641Z",
+      "updatedDate": "2024-06-04T09:59:35.641Z",
+      "shipmentId": 0,
+      "isDelete": 0,
+      "createdBy": 0,
+      "updatedBy": 0
+    }
+  ],
+  "createdBy": 0
+}
+
+
+/* Delivery Order List */
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrderList
+{
+  "companyid": 0,
+  "doNo": "string",
+  "custCode": "string",
+  "custName": "string",
+  "statusid": 0,
+  "shipmentno": "string",
+  "shipmentdate": "dd-MM-yyyy",
+  "dtFrom": "dd-MM-yyyy",
+  "dtTo": "dd-MM-yyyy"
+}
+
+/* Delivery Order Details */
+
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrdersAddressByDeliveryOrderId?DeliveryOrderid=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVDeliveryOrderLines?DeliveryOrderid=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrderDocumentsByDeliveryOrderId?DeliveryOrderid=1
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetEPODDDeliveryOrderInfoLinesByDeliveryOrderId?deliveryOrderId=1
+
+/* Anchorage Master CRU */
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetAnchorageList
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/AddAnchorage
+{
+  "anchorageId": 0,
+  "anchorageCode": "string",
+  "anchorageDescription": "string",
+  "createdDate": "2024-05-31T07:46:40.383Z",
+  "updatedDate": "2024-05-31T07:46:40.383Z",
+  "createdBy": 0,
+  "updatedBy": 0
+}
+ 
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateAnchorage
+{
+  "anchorageId": 0,
+  "anchorageCode": "string",
+  "anchorageDescription": "string",
+  "updatedDate": "2024-06-03T10:32:30.799Z",
+  "updatedBy": 0
+}
+
+/* GoodsReturnReasons Master CRU */
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetGoodsReturnReasonsList
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/AddGoodsReturnReasons
+{
+  "grnReasonId": 0,
+  "grnReasonCode": "string",
+  "grnReasonDescription": "string",
+  "created_date": "2024-06-04T13:15:54.530Z",
+  "updated_date": "2024-06-04T13:15:54.530Z",
+  "created_by": 0,
+  "updated_by": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateGoodsReturnReasons
+{
+  "grnReasonId": 0,
+  "grnReasonCode": "string",
+  "grnReasonDescription": "string",
+  "updated_date": "2024-06-04T13:16:44.248Z",
+  "updated_by": 0
+}
+
+/* TransportType Master CRU */
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetTransportTypeList
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/AddTransportType
+{
+  "transport_type_id": 0,
+  "transport_type_code": "string",
+  "transport_type_description": "string",
+  "created_date": "2024-06-04T13:17:03.006Z",
+  "updated_date": "2024-06-04T13:17:03.006Z",
+  "created_by": 0,
+  "updated_by": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateTransportType
+{
+  "transport_type_id": 0,
+  "transport_type_code": "string",
+  "transport_type_description": "string",
+  "updated_date": "2024-06-04T13:17:15.246Z",
+  "updated_by": 0
+}
+
+
+
+
+
+API Delivery Order Push 
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/PushDeliveryOrders
+{
+  "deliveryOrderInfo": {
+    "delivery_order_id": 0,
+    "delivery_order_no": "string",
+    "shipmentid": 0,
+    "tripdetailid": 0,
+    "tripid": 0,
+    "sales_order_no": "string",
+    "quote_no": "string",
+    "contact": "string",
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-04T08:59:22.015Z",
+    "dept_code": "string",
+    "sales_person_code": "string",
+    "posting_date": "2024-06-04T08:59:22.015Z",
+    "requested_delivery_date": "2024-06-04T08:59:22.015Z",
+    "internal_dept": "string",
+    "mark_reference_no": "string",
+    "pono": "string",
+    "customer_no": "string",
+    "customer_name": "string",
+    "planned_ship_date": "2024-06-04T08:59:22.015Z",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "jobno": "string",
+    "status_desc": "string",
+    "statusid": 0,
+    "order_no": "string",
+    "parent_customer": "string",
+    "promised_delivery_date": "2024-06-04T08:59:22.015Z",
+    "packaging_unit_no": 0,
+    "agent_service": "string",
+    "location_code": "string",
+    "companyid": 0,
+    "customerid": 0,
+    "currency_code": "string"
+  },
+  "deliveryOrderLines": [
+    {
+      "delivery_order_lines_id": 0,
+      "item_no": 0,
+      "item_ref_no": "string",
+      "item_description": "string",
+      "quantity": 0,
+      "uom": "string",
+      "awb_bl": "string",
+      "quantity_invoiced": 0,
+      "statusid": 0,
+      "created_date": "2024-06-04T08:59:22.015Z",
+      "updated_date": "2024-06-04T08:59:22.015Z",
+      "grn_reason_id": 0,
+      "delivery_order_id": 0,
+      "delivery_order_no": "string",
+      "location_code": "string",
+      "internal_dept": "string",
+      "jobno": "string",
+      "vessel_code": "string",
+      "vessel_name": "string",
+      "sales_person_code": "string",
+      "broker_code": "string",
+      "dept_code": "string",
+      "packaging_unit_no": 0,
+      "epod_line_remarks": "string"
+    }
+  ]
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateShipmentDetails
+{
+  "shipment_Info": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "2024-06-19T09:01:03.461Z",
+    "planned_delivery_date": "2024-06-19T09:01:03.461Z",
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "companyid": 0,
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-19T09:01:03.461Z",
+    "vessel_ata": "2024-06-19T09:01:03.461Z",
+    "delivery_date": "2024-06-19T09:01:03.461Z",
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "2024-06-19T09:01:03.461Z",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string",
+    "shipment_statusdesc": "string",
+    "epod_Shipment_Notes": "string",
+    "is_Delete": 0
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,
+    "vehicle_no": "string",
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "2024-06-19T09:01:03.461Z",
+    "actual_delivery_end": "2024-06-19T09:01:03.461Z",
+    "planned_from": "2024-06-19T09:01:03.461Z",
+    "planned_to": "2024-06-19T09:01:03.461Z",
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",
+    "allowance_amt": 0
+  },
+  "shipment_document": [
+    {
+      "shipmentDocumentId": 0,
+      "documentNo": 0,
+      "documentType": "string",
+      "documentName": "string",
+      "documentTitle": "string",
+      "documentPath": "string",
+      "createdDate": "2024-06-19T09:01:03.461Z",
+      "updatedDate": "2024-06-19T09:01:03.461Z",
+      "shipmentId": 0,
+      "isDelete": 0,
+      "createdBy": 0,
+      "updatedBy": 0
+    }
+  ],
+  "deliveryOrderIds": [
+    0
+  ],
+  "createdBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateShipmentDetails
+{
+  "shipment_Info": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "2024-06-05T07:00:13.044Z",
+    "planned_delivery_date": "2024-06-05T07:00:13.044Z",
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "companyid": 0,
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-05T07:00:13.044Z",
+    "vessel_ata": "2024-06-05T07:00:13.044Z",
+    "delivery_date": "2024-06-05T07:00:13.044Z",
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "2024-06-05T07:00:13.044Z",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string",
+	"shipment_statusdesc": "string",
+	"epod_Shipment_Notes": "string"
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,
+    "vehicle_no": "string",
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "2024-06-05T07:00:13.044Z",
+    "actual_delivery_end": "2024-06-05T07:00:13.044Z",
+    "planned_from": "2024-06-05T07:00:13.044Z",
+    "planned_to": "2024-06-05T07:00:13.044Z",
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",
+    "allowance_amt": 0
+  },
+  "updatedBy": 0
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateShipmentDocument
+{
+  "shipmentDocumentId": 0,
+  "documentNo": 0,
+  "documentType": "string",
+  "documentName": "string",
+  "documentTitle": "string",
+  "documentPath": "string",
+  "createdDate": "2024-06-05T07:01:28.697Z",
+  "updatedDate": "2024-06-05T07:01:28.697Z",
+  "shipmentId": 0,
+  "isDelete": 0,
+  "createdBy": 0,
+  "updatedBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/RemoveShipmentDocument
+{
+  "shipmentDocumentId": 0,
+  "shipmentId": 0,
+  "isDelete": 0,
+  "updatedBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateDeliveryOrderDocument
+{
+  "deliveryDocumentId": 0,
+  "documentNo": 0,
+  "documentType": "string",
+  "documentName": "string",
+  "documentTitle": "string",
+  "documentPath": "string",
+  "createdDate": "2024-06-05T07:09:44.431Z",
+  "updatedDate": "2024-06-05T07:09:44.431Z",
+  "deliveryOrderId": 0,
+  "isDelete": 0,
+  "created_by": 0,
+  "updated_by": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/RemoveDeliveryOrderDocument
+{
+  "deliveryDocumentId": 0,
+  "updatedDate": "2024-06-05T07:10:32.125Z",
+  "deliveryOrderId": 0,
+  "updated_by": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetSiteConfigByModuleidAndCompanyid?Moduleid=1&companyid=1001
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateAssignShipmentToDeliveryOrder
+{
+  "deliveryOrderIds": [
+    0
+  ],
+  "shipmentId": 0,
+  "updatedBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateEpodDeliveryOrderLines
+{
+  "deliveryOrderId": 0,
+  "shipmentId": 0,
+  "updatedBy": 0,
+  "updatedDate": "2024-06-06T06:09:58.772Z",
+  "goodsReturnRemarks": "string",
+  "epoD_ItemDetails": [
+    {
+      "deliveryOrderLinesId": 0,
+      "quantity": 0,
+      "quantityInvoiced": 0,
+      "grnReasonId": 0,
+      "epod_line_remarks": "string"
+    }
+  ]
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GenerateQRCode
+{
+  "shipmentId": 0,
+  "shipmentNo": "string",
+  "vesselName": "string",
+  "customerName": "string",
+  "jobNo": "string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateUnAssignShipmentToDeliveryOrder
+{
+  "deliveryOrderIds": [
+    0
+  ],
+  "shipmentId": 0,
+  "updatedBy": 0
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateEPODShipmentDetails
+{
+  "shipmentid": 0,
+  "epoD_Shipment_Remarks": "string",
+  "updateBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVesselList
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetShipmentDropDownByCompanyId?companyid=1001
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrdersDropDownByCompanyIdandCustomerid?companyid=1001&customerid=4
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CallGetCustomerListDetailsByCompanyId?companyid=1001
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetShipmentList  
+{
+  "companyid": 0,
+  "shipmentno": "string",
+  "statusid": 0,
+  "custCode": "string",
+  "custName": "string",
+  "transTypeid": 0,
+  "jobno": "string",
+  "vesselName": "string",
+  "dtFrom": "string",
+  "dtTo": "string",
+  "isDeliveryToday": true,
+  "isDeliveryin3days": true,
+  "isDeliveryThisWeek": true
+}
+
+
+/* VesselAuthentication EPOD */
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/EpodUpdateShippedStatus
+{
+  "shipmentid": 0,
+  "userid": 0,
+  "latitude":"string",
+  "longitude":"string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetNewShipmentWithDOList
+{
+  "companyid": 0,
+  "lstdo": [
+    0
+  ]
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateShipmentDetails
+{
+  "shipment_Info": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "2024-06-19T09:01:03.461Z",
+    "planned_delivery_date": "2024-06-19T09:01:03.461Z",
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "companyid": 0,
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-19T09:01:03.461Z",
+    "vessel_ata": "2024-06-19T09:01:03.461Z",
+    "delivery_date": "2024-06-19T09:01:03.461Z",
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "2024-06-19T09:01:03.461Z",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string",
+    "shipment_statusdesc": "string",
+    "epod_Shipment_Notes": "string",
+    "is_Delete": 0
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,
+    "vehicle_no": "string",
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "2024-06-19T09:01:03.461Z",
+    "actual_delivery_end": "2024-06-19T09:01:03.461Z",
+    "planned_from": "2024-06-19T09:01:03.461Z",
+    "planned_to": "2024-06-19T09:01:03.461Z",
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",
+    "allowance_amt": 0
+  },
+  "shipment_document": [
+    {
+      "shipmentDocumentId": 0,
+      "documentNo": 0,
+      "documentType": "string",
+      "documentName": "string",
+      "documentTitle": "string",
+      "documentPath": "string",
+      "createdDate": "2024-06-19T09:01:03.461Z",
+      "updatedDate": "2024-06-19T09:01:03.461Z",
+      "shipmentId": 0,
+      "isDelete": 0,
+      "createdBy": 0,
+      "updatedBy": 0
+    }
+  ],
+  "deliveryOrderIds": [
+    0
+  ],
+  "createdBy": 0
+}
+
+
+Updated Api 
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrdersInfo?DeliveryOrderid=4&Companyid=1001
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetShipmentInfo?Shipmentid=6&Companyid=1001
+
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UploadShipmentDocument
+{
+  "docRefId": 0,
+  "updatedBy": 0,
+  "document_Name": "string",
+  "fileType": "string",
+  "base64Data": "string",
+  "docid": 0,
+  "companyid": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVesselAuthentication
+{
+  "shipmentid": 0,
+  "useremailid": "string",
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "password": "string",  -------------> required
+  "vesselimo": "string",-------------> not required
+  "crewname": "string",-------------> not required
+  "role": "string"-------------> not required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVesselAuthenticationCrew
+{
+  "shipmentid": 0,
+  "useremailid": "string",
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "password": "string", -------------> not required
+  "vesselimo": "string",-------------> required
+  "crewname": "string",------------->  required
+  "role": "string"     ------------->  required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetCompanyDetails?companyid=1001
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/DownloadShipmentDocument
+{
+  "docRefId": 0, -------------> required
+  "updatedBy": 0,-------------> not required
+  "document_Name": "string",-------------> not required
+  "fileType": "string",-------------> not required
+  "base64Data": "string",-------------> not required
+  "docid": 0,-------------> required
+  "companyid": 0 -------------> not required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UploadShipmentDocument
+{
+  "docRefId": 0,-------------> required
+  "updatedBy": 0,-------------> required
+  "document_Name": "string",-------------> required
+  "fileType": "string",-------------> not required
+  "base64Data": "string",-------------> required
+  "docid": 0,  -------------> not required
+  "companyid": 0 -------------> required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/DownloadDeliveryOrderDocument
+{
+  "docRefId": 0, -------------> required
+  "updatedBy": 0,-------------> not required
+  "document_Name": "string",-------------> not required
+  "fileType": "string",-------------> not required
+  "base64Data": "string",-------------> not required
+  "docid": 0,-------------> required
+  "companyid": 0 -------------> not required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UploadDeliveryOrderDocument
+{
+  "docRefId": 0,-------------> required
+  "updatedBy": 0,-------------> required
+  "document_Name": "string",-------------> required
+  "fileType": "string",-------------> not required
+  "base64Data": "string",-------------> required
+  "docid": 0,  -------------> not required
+  "companyid": 0 -------------> required
+}
+
+Updated 25-06-2024
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVesselAuthentication
+{
+  "shipmentid": 0,
+  "useremailid": "string",
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "password": "string",
+  "vesselimo": "string",-------------> not required
+  "crewname": "string",-------------> not required
+  "role": "string"-------------> not required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVesselAuthenticationCrew
+{
+  "shipmentid": 0,
+  "useremailid": "string",
+  "userid": 0,      -------------> not required
+  "latitude": "string",
+  "longitude": "string",
+  "password": "string",-------------> not required
+  "vesselimo": "string",
+  "crewname": "string",
+  "role": "string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/EpodUpdateShippedStatus
+{
+  "shipmentid": 0,
+  "userid": 0,        -------------> not required
+  "latitude": "string",
+  "longitude": "string",
+  "emailid": "string",
+  "username": "string",
+  "vesselimo": "string",
+  "role": "string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetPrintShipmentInfo?Shipmentid=7&Companyid=1001  
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateShipmentDetails
+{
+  "shipment_Info": {
+    "shipmentid": 0,    -------------> required
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "string", -------------> "dd/MM/yyyy HH:mm"
+    "planned_delivery_date": "string", -------------> "dd/MM/yyyy HH:mm" 
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",  -------------> required
+    "companyid": 0,  -------------> required
+    "vessel_id": 0,  -------------> required
+    "vessel_eta": "string",  -------------> "dd/MM/yyyy HH:mm" -------------> required
+    "vessel_ata": "string",
+    "delivery_date": "string", -------------> "dd/MM/yyyy HH:mm"  -------------> required
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "string",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string",
+    "shipment_statusdesc": "string",
+    "epod_Shipment_Notes": "string",
+    "is_Delete": 0,
+    "vehicle_no": "string",
+    "boarding_Officer_Name": "string"
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",  -------------> required
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,   -------------> required
+    "vehicle_no": "string",   -------------> required
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",   -------------> required
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "string",-------------> "dd/MM/yyyy"
+    "actual_delivery_end": "string",-------------> "dd/MM/yyyy"
+    "planned_from": "string",-------------> "dd/MM/yyyy"
+    "planned_to": "string",-------------> "dd/MM/yyyy"
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",   -------------> required
+    "allowance_amt": 0
+  },
+  "shipment_document": [
+    {
+      "shipmentDocumentId": 0,
+      "documentNo": 0,
+      "documentType": "string",
+      "documentName": "string",
+      "documentTitle": "string",
+      "documentPath": "string",
+      "createdDate": "2024-06-25T10:51:30.146Z",
+      "updatedDate": "2024-06-25T10:51:30.146Z",
+      "shipmentId": 0,
+      "isDelete": 0,
+      "createdBy": 0,
+      "updatedBy": 0
+    }
+  ],
+  "deliveryOrderIds": [
+    0
+  ],
+  "createdBy": 0
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/UpdateOutboundShipment
+{
+    "shipment_Info": {
+    "shipmentid": 0,    -------------> required
+    "order_no": "string",
+    "receiverid": 0,
+    "planned_ship_date": "string", -------------> "dd/MM/yyyy HH:mm"
+    "planned_delivery_date": "string", -------------> "dd/MM/yyyy HH:mm" 
+    "shipment_notes": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",  -------------> required
+    "companyid": 0,  -------------> required
+    "vessel_id": 0,  -------------> required
+    "vessel_eta": "string",  -------------> "dd/MM/yyyy HH:mm" -------------> required
+    "vessel_ata": "string",
+    "delivery_date": "string", -------------> "dd/MM/yyyy HH:mm"  -------------> required
+    "anchorage_id": 0,
+    "agent": "string",
+    "agent_contact_person": "string",
+    "agent_contact_no": "string",
+    "supply_boat": "string",
+    "supply_boat_contact_person": "string",
+    "supply_boat_contact_no": "string",
+    "loading_point": "string",
+    "loading_time": "string",
+    "co_party": "string",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "anchorage_code": "string",
+    "anchorage_description": "string",
+    "transport_type_code": "string",
+    "transport_type_description": "string",
+    "transport_type_id": 0,
+    "driver_name": "string",
+    "cust_code": "string",
+    "cust_name": "string",
+    "shipment_statusdesc": "string",
+    "epod_Shipment_Notes": "string",
+    "is_Delete": 0,
+    "vehicle_no": "string",
+    "boarding_Officer_Name": "string"
+  },
+  "shipment_trip_plan": {
+    "shipmentid": 0,
+    "order_no": "string",
+    "status_desc": "string",
+    "shipment_statusid": 0,
+    "jobno": "string",
+    "driver_name": "string",  -------------> required
+    "transport_type_description": "string",
+    "transport_type_code": "string",
+    "transport_type_id": 0,   -------------> required
+    "vehicle_no": "string",   -------------> required
+    "driver_contact_no": "string",
+    "estimate_packaging_unit": 0,
+    "location_from": "string",
+    "location_to": "string",
+    "boarding_officer_name": "string",   -------------> required
+    "transport_company": "string",
+    "ctm": 0,
+    "actual_delivery_start": "string",-------------> "dd/MM/yyyy"
+    "actual_delivery_end": "string",-------------> "dd/MM/yyyy"
+    "planned_from": "string",-------------> "dd/MM/yyyy"
+    "planned_to": "string",-------------> "dd/MM/yyyy"
+    "outsourced_vehicle_no": "string",
+    "outsourced_contact_person": "string",
+    "outsourced_contact_no": "string",
+    "driver_code": "string",   -------------> required
+    "allowance_amt": 0
+  }
+  ,  "updatedBy": 0
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetLogisticExportData
+{
+  "shipmentid": 0, ---------------------------- required
+  "companyid": 0 ---------------------------- required
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetPrintGRNReport
+{
+  "shipmentid": 0,   ---------------------------- required
+  "companyid": 0     ---------------------------- required
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetEpodShipmentList
+{
+  "companyid": 0, ---------------------------- required
+  "shipmentno": "string",
+  "statusid": 0,
+  "custCode": "string",
+  "custName": "string",
+  "transTypeid": 0,
+  "jobno": "string",
+  "vesselName": "string",
+  "dtFrom": "string",
+  "dtTo": "string",
+  "isDeliveryToday": true,
+  "isDeliveryin3days": true,
+  "isDeliveryThisWeek": true
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/PushDeliveryOrders
+{
+  "companycode": "string",   ----------------------------New Update required
+  "deliveryOrderInfo": {
+    "delivery_order_id": 0,
+    "delivery_order_no": "string",
+    "shipmentid": 0,
+    "tripdetailid": 0,
+    "tripid": 0,
+    "sales_order_no": "string",
+    "quote_no": "string",
+    "contact": "string",
+    "vessel_id": 0,
+    "vessel_eta": "2024-06-27T06:19:23.127Z",
+    "dept_code": "string",
+    "sales_person_code": "string",
+    "posting_date": "2024-06-27T06:19:23.128Z",
+    "requested_delivery_date": "2024-06-27T06:19:23.128Z",
+    "internal_dept": "string",
+    "mark_reference_no": "string",
+    "pono": "string",
+    "customer_no": "string",
+    "customer_name": "string",
+    "planned_ship_date": "2024-06-27T06:19:23.128Z",
+    "vessel_code": "string",
+    "vessel_name": "string",
+    "imo_no": 0,
+    "jobno": "string",
+    "status_desc": "string",
+    "statusid": 0,
+    "order_no": "string",
+    "parent_customer": "string",
+    "promised_delivery_date": "2024-06-27T06:19:23.128Z",
+    "packaging_unit_no": 0,
+    "agent_service": "string",
+    "location_code": "string",
+    "companyid": 0,
+    "customerid": 0,
+    "currency_code": "string",
+    "do_job_no": "string",
+    "good_return_remarks": "string",
+    "end_customerid": 0
+  },
+  "deliveryOrderLines": [
+    {
+      "delivery_order_lines_id": 0,
+      "item_no": 0,
+      "item_ref_no": "string",
+      "item_description": "string",
+      "quantity": 0,
+      "uom": "string",
+      "awb_bl": "string",
+      "quantity_invoiced": 0,
+      "statusid": 0,
+      "created_date": "2024-06-27T06:19:23.128Z",
+      "updated_date": "2024-06-27T06:19:23.128Z",
+      "grn_reason_id": 0,
+      "delivery_order_id": 0,
+      "delivery_order_no": "string",
+      "location_code": "string",
+      "internal_dept": "string",
+      "jobno": "string",
+      "vessel_code": "string",
+      "vessel_name": "string",
+      "sales_person_code": "string",
+      "broker_code": "string",
+      "dept_code": "string",
+      "packaging_unit_no": 0,
+      "epod_line_remarks": "string",
+      "grn_reason_code": "string",
+      "grn_reason_description": "string"
+    }
+  ]
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/EpodUpdateVerificationStatus
+{
+  "shipmentid": 0,   ---------------------------- required
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "emailid": "string",
+  "username": "string",
+  "vesselimo": "string",
+  "role": "string"
+}
+
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/EpodUpdateConfirmedStatus
+{
+  "shipmentid": 0,
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "emailid": "string",
+  "username": "string",
+  "vesselimo": "string",
+  "role": "string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/EpodLoginByVesselAuthenticationCrewEncryptData
+{
+  "encryptData": "string",
+  "latitude": "string",
+  "longitude": "string"
+}
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/CreateEncodeOfficeEPODUrl
+{
+  "shipmentid": 0,
+  "useremailid": "string",
+  "userid": 0,
+  "latitude": "string",
+  "longitude": "string",
+  "password": "string",
+  "vesselimo": "string",
+  "crewname": "string",
+  "role": "string"
+}
+
+// User Admin API's
+
+//Get All users
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/GetAllUsers?Userid=1001 
+Modal--> List<V_USER_LIST>
+
+//Update or create new user or password change or active/inactive user 
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/CreateOrUpdateUserDetails
+{
+  "userdetails": {
+    "ex_userid": 0,
+    "addressid": 0,
+    "linkid": 0,
+    "ex_usercode": "string",
+    "ex_username": "string",
+    "ex_password": "string",
+    "ex_emailid": "string",
+    "usertype": 0,
+    "created_date": "2024-07-12T08:49:57.439Z",
+    "siteid": 0,
+    "exported": 0,
+    "update_date": "2024-07-12T08:49:57.439Z",
+    "update_site": 0,
+    "isactive": 0,
+    "update_invoice": 0,
+    "pwd_expired": 0,
+    "access_level": 0,
+    "inv_usertype": 0,
+    "dashboard_access": 0,
+    "companyid": "string",
+    "usertype_lesmonitor": 0
+  },
+  "password": "string",
+  "confirmpassword": "string",
+  "isNewUser": 0
+}
+Modal --> CreateUpdateUserModal
+
+
+
+//Get User details
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/GetUserDetails?accessUserid=100000&foruserid=100000 
+Main Modal -->UserDetailsModal
+Sub modal --> List<V_USERLINKED_COMPANIES>
+
+//Get all companies
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/GetAllCompanies?accessuserid=100001 
+Modal --> List<LES_COMPANY>
+
+
+------------------------22.07.2024
+
+// Verifiying DO 
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetVerifiedDOList
+{
+  "shipmentid": 0,
+  "companyid": 0
+}
+
+------------------------23.07.2024
+
+https://test.lighthouse-esolutions.com/WMS_webapi/api/Logistic/GetDeliveryOrdersDropDownByVerification
+{
+  "companyid": 0,
+  "customerid": 0,
+  "jobno": "string",
+  "vesselName": "string",
+  "vesselETA": "string"
+}
+
+------------------------05.08.2024 by Raviprasad
+
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/UpdateCompanyDetails
+{
+  "companydetails": {
+    "companyid": 0,
+    "companydescription": "string",
+    "companycode": "string",
+    "addressid": 0,
+    "mainlogo": "string",
+    "mainlogofilename": "string",
+    "printlogo": "string",
+    "printlogofilename": "string",
+    "faviconlogo": "string",
+    "faviconlogofilename": "string"
+  },
+  "accessuserid": 0
+}
+Modal -->CompanyUpdateModal
+
+To get All Sm Addresses for Select dropdown:
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/GetAllSMAddress?accessuserid=100000
+
+To add user company link:
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/AddCompanyLink?companyId=1001021&foruserid=20202&UsertypeId=192&accessUserid=03993
+
+To remove user company link
+https://test.lighthouse-esolutions.com/WMS_webapi_test/api/UserAdmin/RemoveUserCompanyLink?accessuserid=45678&companyid=45678&foruserid=45678
+
