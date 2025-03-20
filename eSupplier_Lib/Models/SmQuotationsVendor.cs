@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace eSupplier_Lib.Models;
+
+public partial class SmQuotationsVendor
+{
+    [Key]
+    public int QuotationId { get; set; }  // QUOTATIONID
+    public string? Doc_Xml { get; set; }  // DOC_XML
+    public string? DocId { get; set; }  // DOCID
+    public string? Doc_Type { get; set; }  // DOC_TYPE
+    public string? Vrno { get; set; }  // VRNO
+    public string? Buyer_Vrno { get; set; }  // BUYER_VRNO
+    public string? Supplier_Vrno { get; set; }  // SUPPLIER_VRNO
+    public int? Quote_AddressId { get; set; }  // QUOTE_ADDRESSID
+    public int? Buyer_AddressId { get; set; }  // BUYER_ADDRESSID
+    public DateTime? Rfq_Sent_Date { get; set; }  // RFQ_SENT_DATE
+    public DateTime? Quote_Recvd_Date { get; set; }  // QUOTE_RECVD_DATE
+    public int? CurrencyId { get; set; }  // CURRENCYID
+    public string? Curr_Code { get; set; }  // CURR_CODE
+    public double? Quote_Amount { get; set; }  // QUOTE_AMOUNT
+    public double? Quote_ExchRate { get; set; }  // QUOTE_EXCHRATE
+    public double? Item_Total { get; set; }  // ITEM_TOTAL
+    public double? OtherCosts { get; set; }  // OTHERCOSTS
+    public double? FreightAmt { get; set; }  // FREIGHTAMT
+    public int? Payment_Terms { get; set; }  // PAYMENT_TERMS
+    public double? Quote_Discount { get; set; }  // QUOTE_DISCOUNT
+    public double? Additional_Disc { get; set; }  // ADDITIONAL_DISC
+    public byte? Add_Disc_Type { get; set; }  // ADD_DISC_TYPE
+    public DateTime? Quote_Validity { get; set; }  // QUOTE_VALIDITY
+    public string? Quote_Remarks { get; set; }  // QUOTE_REMARKS
+    public DateTime? Update_Date { get; set; }  // UPDATE_DATE
+    public DateTime? DeliveryTime { get; set; }  // DELIVERYTIME
+    public string? PayloadId { get; set; }  // PAYLOADID
+    public DateTime? Created_Date { get; set; }  // CREATED_DATE
+    public int? SiteId { get; set; }  // SITEID
+    public int? Sent_By { get; set; }  // SENT_BY
+    public string? Port_Code { get; set; }  // PORT_CODE
+    public string? Port_Name { get; set; }  // PORT_NAME
+    public DateTime? Quote_ApprovedDate { get; set; }  // QUOTE_APPROVEDDATE
+    public int? DeliveryDays { get; set; }  // DELIVERYDAYS
+    public int? Quote_Submit_By { get; set; }  // QUOTE_SUBMIT_BY
+    public string? Quote_Reference { get; set; }  // QUOTE_REFERENCE
+    public DateTime? Reply_By_Date { get; set; }  // REPLY_BY_DATE
+    public DateTime? Quote_Submit_Date { get; set; }  // QUOTE_SUBMIT_DATE
+    public int? Vendor_Status { get; set; }  // VENDOR_STATUS
+    public byte? Changed_By_Vendor { get; set; }  // CHANGED_BY_VENDOR
+    public DateTime? LateDate { get; set; }  // LATEDATE
+    public DateTime? Rfq_Ack_Date { get; set; }  // RFQ_ACK_DATE
+    public DateTime? Po_Ack_Date { get; set; }  // PO_ACK_DATE
+    public string? Poc_Reference { get; set; }  // POC_REFERENCE
+    public DateTime? PoDate { get; set; }  // PODATE
+    public DateTime? Poc_Date { get; set; }  // POC_DATE
+    public int? Poc_By { get; set; }  // POC_BY
+    public string? Buyer_Remarks { get; set; }  // BUYER_REMARKS
+    public string? Vessel_Name { get; set; }  // VESSEL_NAME
+    public string? Vessel_IdNo { get; set; }  // VESSEL_IDNO
+    public string? Vessel_Owner { get; set; }  // VESSEL_OWNER
+    public string? Vessel_Owner_Code { get; set; }  // VESSEL_OWNER_CODE
+    public Int16? Exported { get; set; }  // EXPORTED
+    public byte? Version { get; set; }  // VERSION
+    public byte? Rfq_Export { get; set; }  // RFQ_EXPORT
+    public string? Quote_File_Ref { get; set; }  // QUOTE_FILE_REF
+    public int? Print_Status { get; set; }  // PRINT_STATUS
+    public string? Quote_File_Stamp { get; set; }  // QUOTE_FILE_STAMP
+    public DateTime? Delivery_Promised { get; set; }  // DELIVERY_PROMISED
+    public string? General_Terms { get; set; }  // GENERAL_TERMS
+    public string? Pay_Terms { get; set; }  // PAY_TERMS
+    public double? Tax_PerCnt { get; set; }  // TAX_PERCNT
+    public int? Quote_Version { get; set; }  // QUOTE_VERSION
+    public int? Is_Declined { get; set; }  // IS_DECLINED
+    public string? Quote_Subject { get; set; }  // QUOTE_SUBJECT
+    public string? Sp_Mas_Remark { get; set; }  // SP_MAS_REMARK
+    public int? Byr_Supp_LinkId { get; set; }  // BYR_SUPP_LINKID
+    public string? Attachment1 { get; set; }  // ATTACHMENT1
+    public string? Attachment2 { get; set; }  // ATTACHMENT2
+    public double? Allowance { get; set; }  // ALLOWANCE
+    public string? Udf1 { get; set; }  // UDF1
+    public string? Udf2 { get; set; }  // UDF2
+    public string? Udf3 { get; set; }  // UDF3
+    public string? RevisionNumber { get; set; }  // RevisionNumber
+    public int? Link_RecordId { get; set; }  // LINK_RECORDID
+    public string? Transport_Mode { get; set; }  // TRANSPORT_MODE
+    public string? OrderHandling { get; set; }  // OrderHandling
+    public string? OrderType { get; set; }  // OrderType
+    public string? OriginatingRequestNo { get; set; }  // OriginatingRequestNo
+    public string? ShipComplete { get; set; }  // ShipComplete
+    public string? SupplierOrgRef { get; set; }  // SupplierORGRef
+    public string? UpdType { get; set; }  // UpdType
+    public string? ContractType { get; set; }  // ContractType
+    public string? OrgSystemRef { get; set; }  // OrgSystemRef
+    public double? Other_Cost2 { get; set; }  // OTHER_COST2
+    public double? Other_Cost3 { get; set; }  // OTHER_COST3
+    public DateTime? Vessel_Eta { get; set; }  // VESSEL_ETA
+    public DateTime? Vessel_Etd { get; set; }  // VESSEL_ETD
+    public string? Location { get; set; }  // LOCATION
+    public string? Attention_Remark { get; set; }  // ATTENTION_REMARK
+    public string? Buyer_Sender { get; set; }  // BUYER_SENDER
+    public string? Buyer_Recipient { get; set; }  // BUYER_RECIPIENT
+    public DateTime? Exported_Date { get; set; }  // EXPORTED_DATE
+    public string? Department { get; set; }  // DEPARTMENT
+    public double? Tax_Amount { get; set; }  // TAX_AMOUNT
+    public double? Cost_Amount1 { get; set; }  // COST_AMOUNT1
+    public double? Cost_Amount2 { get; set; }  // COST_AMOUNT2
+    public int? Priority { get; set; }  // PRIORITY
+    public string? Message_Number { get; set; }  // MESSAGE_NUMBER
+    public int? Created_Date_Int { get; set; }  // CREATED_DATE_INT
+    public int? Update_Date_Int { get; set; }  // UPDATE_DATE_INT
+    public string? Category { get; set; }  // CATEGORY
+}

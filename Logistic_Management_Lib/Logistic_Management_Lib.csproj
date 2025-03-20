@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eSupplier_Lib\eSupplier_Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LeSDataMain">
+      <HintPath>bin\Debug\net7.0\LeSDataMain.dll</HintPath>
+    </Reference>
+    <Reference Include="LES_USER_ADMINISTRATION_LIB">
+      <HintPath>..\LES_USER_ADMINISTRATION_LIB\bin\Debug\net7.0\LES_USER_ADMINISTRATION_LIB.dll</HintPath>
+    </Reference>
+    <Reference Include="QrCode">
+      <HintPath>..\QR_CODE_Generator\QrCodeTest\bin\Debug\QrCode.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>bin\Debug\net7.0\SkiaSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
